@@ -1,0 +1,800 @@
+html lang=en
+    head
+        meta charset=utf-8
+        meta http-equiv=X-UA-Compatible content=IE=edge
+        meta name=viewport content=width=device-width, initial-scale=1
+        titleYoutube Playlist Downloader Backup Video Online Freetitle
+        meta name=title content=Youtube Playlist Downloader Backup Video Online Free
+        meta name=description content=Download youtube playlist channel online, convert youtube playlist to mp3, download soundcloud dailymotion free without any software
+        meta property=ogdescription content=Download youtube playlist channel online, convert youtube playlist to mp3, download soundcloud dailymotion free without any software
+        meta name=keywords content=download youtube video, convert youtube mp3, download playlist, download channel, download soundcloud, download dailymotion
+        meta name=yandex-verification content=9587696b690dff3a
+        meta property=ogtitle content=Youtube Playlist Downloader Backup Video Online Free
+        meta property=ogurl content=httpsyoutubeplaylist.cc
+        meta property=ogsite_name content=YoutubePlaylist.cc
+        link rel=canonical href=httpsyoutubeplaylist.cc
+        meta name=csrf-token content=AmuaXDBEr4foSZPDOYDKqju9N2hZLpJJ5rUkLyt7
+        meta name=google-site-verification content=7Eopg4yVd0JC_SxD23PoVYIOy-QhOraQikzNeTrl0Yo
+        meta name=google-site-verification content=pwdnC68mBpbYKeB509Mn5mkeC8B6wBK6-ZkYAkeVs2c
+        link href=httpsfonts.googleapis.comcssfamily=Raleway100,600 rel=stylesheet type=textcss
+        link href=httpsyoutubeplaylist.ccassetscssapp.css rel=stylesheet type=textcss
+        link href=httpsyoutubeplaylist.ccassetscssall.css rel=stylesheet type=textcss
+        link href=httpsstackpath.bootstrapcdn.comfont-awesome4.7.0cssfont-awesome.min.css rel=stylesheet type=textcss
+        link href=publicassetscssapp.css rel=stylesheet type=textcss
+        script src='httpsyoutubeplaylist.ccassetsjsapp.jsv=99'script
+        script
+            let redirect = false;
+            $.ajaxSetup({
+                headers {
+                    'X-CSRF-TOKEN' $('meta[name=csrf-token]').attr('content')
+                },
+                beforeSend function(xhr) {},
+                error function(xhr, textStatus, errorThrown) {
+                    switch (xhr.status) {
+                    case 419
+                        if (redirect)
+                            return;
+                        redirect = true;
+                        swal({
+                            type 'warning',
+                            title 'Page expired!',
+                            text 'The page has expired due to inactivity, reloading page.',
+                            allowOutsideClick false,
+                            onOpen ()={
+                                swal.showLoading();
+                                setTimeout(function() {
+                                    window.location.reload();
+                                }, 3000);
+                            }
+                            ,
+                            onClose ()={}
+                        });
+                        break;
+                    case 403
+                    }
+                },
+            });
+            var app = {
+                login httpsyoutubeplaylist.cclogin,
+                support httpsyoutubeplaylist.ccsupport,
+                upgrade httpsyoutubeplaylist.ccupgrade,
+                no_thumbnails httpsyoutubeplaylist.ccassetsimagesthumbnails.jpg
+            };
+            var API_ENDPOINT = httpsapi.youtubeplaylist.cc;
+            var API_SERVER = apiv1;
+            var DOWNLOAD_SERVER = httpsgj5pe-s0-eu.alphacdn.pro;
+            var UserLogged = true;
+            var isPremium = false;
+        script
+    head
+    body class=bg-light
+        style
+            @media (min-width 576px) {
+                .footer {
+                    position absolute;
+                    right 0;
+                    bottom 0;
+                    left 0;
+                    padding 1rem;
+                    background-color #efefef;
+                    text-align center;
+                    line-height 60px;
+                    background-color #f5f5f5;
+                }
+            }
+
+            @media (min-width 0px) {
+                .like-box {
+                    display none;
+                }
+            }
+
+            .form-login {
+                margin-bottom 200px;
+            }
+
+            Medium devices (tablets, 768px and up)
+            @media (min-width 768px) {
+                .footer {
+                    position fixed;
+                    height 60px;
+                    padding 0;
+                }
+            }
+
+            Large devices (desktops, 992px and up)
+            @media (min-width 992px) {
+                .navbar-light .navbar-nav .nav-link{ padding-left 30px; padding-right 30px; font-size 19px; } .navbar {
+                    font-size 1.2em;
+                    z-index 100;
+                }
+
+                .hot-deal img {
+                    margin-top -98px;
+                }
+
+                .navbar-light {
+                    background-color white;
+                }
+
+                .like-box {
+                    display block;
+                    float right;
+                    position relative;
+                    z-index 100;
+                    right -100px;
+                    top 100px;
+                }
+            }
+
+            Extra large devices (large desktops, 1200px and up)
+            @media (min-width 1200px) {
+            }
+
+            .no-select {
+                -webkit-touch-callout none;
+                 iOS Safari 
+                -webkit-user-select none;
+                 Safari 
+                -khtml-user-select none;
+                 Konqueror HTML 
+                -moz-user-select none;
+                 Firefox 
+                -ms-user-select none;
+                 Internet ExplorerEdge 
+                user-select none;
+                 Non-prefixed version, currently supported by Chrome and Opera 
+            }
+
+            .navbar {
+                z-index 100;
+            }
+
+            .alert {
+                z-index 0;
+            }
+
+            .table th, .table td {
+                padding 0.25rem;
+                vertical-align middle;
+                border 1px solid #c4c4c4;
+            }
+
+            body{
+            background-color #fafafa;
+            }
+            .container.main {
+                background-color white;
+                margin-top 15px;
+                padding-top 15px;
+                padding-bottom 5px;
+                margin-bottom 70px;
+            }
+
+            .nav-tabs .nav-link.active {
+                color #495057;
+                background-color #e7e7e7;
+                border-color #dee2e6 #dee2e6 #f8fafc;
+                z-index 0;
+            }
+
+            .footer {
+                position absolute;
+                bottom 0;
+                width 100%;
+                line-height 60px;
+                 Vertically center the text there 
+                background-color #f5f5f5;
+            }
+
+            .footer span {
+                margin 0 5px;
+            }
+
+            html {
+                position relative;
+                min-height 100%;
+            }
+
+            html, body {
+                margin 0;
+                padding 0;
+            }
+
+            .navbar {
+                background-color #606ea4 !important;
+                background-color #414b73 !important;
+                z-index 1;
+                background-color #4e5a87 !important;
+            }
+
+            a.btn-outline-signuphover {
+                color #d1d0d1;
+                text-decoration none;
+            }
+
+            .btn-outline-signup {
+                -webkit-appearance none;
+                -moz-appearance none;
+                background-color transparent;
+                border 1px solid #ffffff;
+                border-radius 5px;
+                color #ffffff;
+                cursor pointer;
+                display inline-block;
+                line-height 1;
+                margin 0;
+                padding 13px 16px 11px;
+                text-align center;
+                text-decoration none;
+                text-transform none;
+                transition background-color .25s linear, border-color .25s linear, color .25s linear;
+                vertical-align middle;
+                white-space nowrap;
+            }
+
+            .navbar-brand {
+                display inline-block;
+                padding-top -0.46rem;
+                padding-bottom -0.46rem;
+                margin-right 1rem;
+                font-size 1.3rem;
+                line-height inherit;
+                white-space nowrap;
+            }
+        style
+        nav class=navbar navbar-expand-lg navbar-dark 
+            div class=container
+                a class=navbar-brand waves-effect  href=httpsyoutubeplaylist.ccYoutubePlaylist.cc a
+                button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarNav aria-controls=navbarNav aria-expanded=false aria-label=Toggle navigation
+                    span class=navbar-toggler-iconspan
+                button
+                div class=collapse navbar-collapse id=navbarNav
+                    ul class=navbar-nav
+                        li class=nav-item waves-effect 
+                            a class=nav-link href=httpsyoutubeplaylist.ccHome a
+                        li
+                        li class=nav-item waves-effect 
+                            a class=nav-link href=httpsyoutubeplaylist.ccfeaturesFeaturesa
+                        li
+                        li class=nav-item waves-effect 
+                            a class=nav-link href=httpsyoutubeplaylist.ccpricingPricinga
+                        li
+                        li class=nav-item waves-effect 
+                            a class=nav-link href=httpsyoutubeplaylist.ccapiAPIa
+                        li
+                        li class=nav-item waves-effect 
+                            a class=nav-link  href=httpsyoutubeplaylist.ccsupportSupporta
+                        li
+                    ul
+                    ul class=navbar-nav flex-row ml-md-auto d-md-flex
+                        li class=nav-item dropdown show
+                            a class=nav-item nav-link dropdown-toggle mr-md-2 waves-effect  href=# id=bd-versions data-toggle=dropdown aria-haspopup=true aria-expanded=true
+                                Welcome, span class=__cf_email__ data-cfemail=0f676e61677f676e61796e613d3f3f3d4f68626e6663216c6062[email &#160;protected]span
+                            a
+                            div class=dropdown-menu dropdown-menu-right aria-labelledby=bd-versions
+                                a class=dropdown-item  href=httpsyoutubeplaylist.ccaccountAccounta
+                                a class=dropdown-item href=httpsyoutubeplaylist.ccupgradeUpgradea
+                                div class=dropdown-dividerdiv
+                                a class=dropdown-item href=httpsyoutubeplaylist.ccloginlogout=trueLogouta
+                            div
+                        li
+                    ul
+                div
+            div
+        nav
+        script data-cfasync=false src=cdn-cgiscripts5c5dd728cloudflare-staticemail-decode.min.jsscript
+        script
+            $(.navbar-nav a).each(function() {
+                if ($(this).attr(href) === (window.location.origin + window.location.pathname)) {
+                    $(this).parents(li).addClass(active);
+                }
+            })
+        script
+        script async src=httpswww.googletagmanager.comgtagjsid=UA-126619606-1script
+        script
+            window.dataLayer = window.dataLayer  [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-126619606-1');
+            String.prototype.capitalize = function() {
+                return this.replace((^s)Sg, function(a) {
+                    return a.toUpperCase();
+                });
+            }
+            ;
+            function sendEvent(category, content) {
+                try {
+                    if (gain window) {
+                        tracker = ga.getAll()[0];
+                        if (tracker)
+                            tracker.send(event, category.capitalize(), content.capitalize());
+                    }
+                } catch (e) {
+                    console.error(error, e);
+                }
+            }
+            setTimeout(function() {
+                if (UserLogged)
+                    sendEvent(User, User ping);
+                else
+                    sendEvent(Guest, Guest ping);
+                if (isPremium)
+                    sendEvent(User, User premium);
+            }, 5000)
+        script
+        div class=container main bg-white rounded shadow-sm
+            div class=like-box
+                iframe src=httpswww.facebook.compluginslike.phphref=httpsyoutubeplaylist.cc&width=51&layout=box_count&action=like&size=small&show_faces=true&share=true&height=65&appId width=60 height=65 style=bordernone;overflowhidden scrolling=no frameborder=0 allowTransparency=true allow=encrypted-mediaiframe
+                br
+                iframe src=httpsplusone.google.com_+1fastbuttonbsv&amp;size=large&amp;hl=en-US&amp;url=httpsyoutubeplaylist.cc&amp;parent=httpsyoutubeplaylist.cc allowtransparency=true frameborder=0 scrolling=no title=+1 style= height 35px; width 50px; iframe
+            div
+            div class=macOS alert alert-warning alert-dismissible fade show style=display none role=alert
+                For macOS user, we highly recommended use free powerful unzip utility bThe Unarchiverb
+                to extract the zip file. 
+                button type=button class=close data-dismiss=alert aria-label=Close
+                    span aria-hidden=true&times;span
+                button
+            div
+            script
+                let isMac = (MaciPhoneiPodiPad)i.test(navigator.platform);
+                if (isMac)
+                    $(.macOS).show();
+            script
+            script type=applicationld+json
+                {
+                    @context httpschema.org,
+                    @type BreadcrumbList,
+                    itemListElement [
+                        {
+                            @type ListItem,
+                            position 1,
+                            name Home,
+                            item httpsyoutubeplaylist.cc
+                        }
+                    ]
+                }script
+            style
+                .selected {
+                    background-color #c5c5c5;
+                }
+
+                tr.disabled {
+                    color #bfbfbf;
+                    pointer-events none;
+                }
+
+                tr.disabled .btn {
+                    display none;
+                }
+
+                .btn-setting {
+                    background-color antiquewhite;
+                }
+
+                .table {
+                    table-layout fixed;
+                    line-height normal;
+                    border-radius 3px;
+                    border-style hidden;
+                    box-shadow 0 0 0 2px #f1f1f1;
+                    margin-left 2px;
+                    width calc(100% - 2px  2);
+                }
+
+                table theadfirst-child trfirst-child {
+                    background #fafafa;
+                    border 2px solid #f1f1f1;
+                }
+
+                @media (min-width 576px) {
+                }
+
+                Medium devices (tablets, 768px and up)
+                @media (min-width 768px) {
+                }
+
+                Large devices (desktops, 992px and up)
+                @media (min-width 992px) {
+                    .playlist-input {
+                        min-width 460px;
+                    }
+
+                    .playlist-text {
+                        min-width 100px;
+                    }
+                }
+
+                Extra large devices (large desktops, 1200px and up)
+                @media (min-width 1200px) {
+                    .playlist-input {
+                        min-width 640px;
+                    }
+
+                    .playlist-text {
+                        min-width 100px;
+                    }
+                }
+
+                .slide-fade-enter-active {
+                    transition all .3s ease;
+                }
+
+                .slide-fade-leave-active {
+                    transition all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+                }
+
+                .slide-fade-enter, .slide-fade-leave-to  .slide-fade-leave-active below version 2.1.8 
+                {
+                    transform translateX(10px);
+                    opacity 0;
+                }
+
+                .btn-outline-light {
+                    border-color #ebebeb;
+                }
+
+                .btn-outline-lighthover {
+                    border-color #7cc6ff;
+                    background-color #f9f9f9;
+                    ; }
+
+                .animate {
+                    -webkit-animation move 3s linear;
+                    -webkit-animation-iteration-count 1;
+                    -webkit-animation-direction alternate;
+                }
+
+                #downloader tr.error {
+                    color gray;
+                }
+
+                .blink {
+                    animation-duration 1200ms;
+                    animation-name blink;
+                    animation-iteration-count infinite;
+                    animation-direction alternate;
+                    -webkit-animation blink 500ms infinite;
+                     Safari and Chrome 
+                }
+
+                @keyframes blink {
+                    from {
+                        color red;
+                    }
+
+                    to {
+                        color black;
+                    }
+                }
+
+                @-webkit-keyframes blink {
+                    from {
+                        color black;
+                    }
+
+                    to {
+                        color red;
+                    }
+                }
+
+                .nav-tabs .nav-link.active {
+                    color #495057;
+                    background-color #ceedff;
+                    border-color #dee2e6 #dee2e6 #f8fafc;
+                    z-index 0;
+                }
+
+                .nav-tabs .nav-link {
+                    border 1px solid transparent;
+                    border-top-left-radius .25rem;
+                    border-top-right-radius .25rem;
+                    font-size larger;
+                }
+
+                .menu-right-click {
+                    background white;
+                    z-index 10000;
+                    width 200px;
+                    box-shadow 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+                    position relative;
+                }
+
+                .menu-options {
+                    margin-bottom 0px;
+                    list-style none;
+                    padding 10px 0;
+                }
+
+                .menu-option {
+                    font-weight 500;
+                    font-size 14px;
+                    padding 10px 40px 10px 20px;
+                    cursor pointer;
+                }
+
+                .menu-optionhover {
+                    background-color #808080c7;
+                    color white;
+                }
+            style
+            div class=container
+                pYoutube Playlist allows backup videos, playlists, channels and subtitles from YouTube, Facebook, Vimeo and other video sites in high quality. Suitable for anyone who want to backup their channel, download study video storage offline. Please read ToS carefully before use.p
+                p style=color green❤ How fast is our service With code optimized and dedicated channel for each premium account, a video average only take less than 10 seconds to get ready to download. In some cases, it maybe slow but quite rare.p
+            div
+            ul class=nav nav-tabs nav-fill id=myTab role=tablist
+                li class=nav-item
+                    a class=nav-link waves-effect waves-light active show data-toggle=tab href=#list-tab role=tab aria-controls=homeList Videoa
+                li
+                li class=nav-item
+                    a data-step=7 data-intro='Finally, click here to see your queue status. You can download single video, or export link to download with any download accelerator like Internet Download Manager' class=nav-link waves-effect waves-light data-toggle=tab href=#downloader-tab role=tab aria-controls=profileDownloadera
+                li
+            ul
+            div class=tab-content
+                div class=tab-pane fade show active id=list-tab role=tabpanel
+                    div style= margin-top 10px; margin-bottom 10px; class=
+                        div class=form-row form-inline
+                            div class=col style=display contents
+                                span class=playlist-text align-middleEnter URLspan
+                                input data-step=1 data-intro=This is place where you enter your playlist, channel, or video link id=playlistText type=text class=form-control playlist-input placeholder=httpswww.youtube.comlist=xyz
+                            div
+                            div class=col
+                                span data-step=2 class=align-middle  style= margin-left 10px; margin-right 10px;or span
+                                button data-intro='You can also enter batch link here' id=listButton class=btn btn-primaryEnter List of URLbutton
+                            div
+                            div class=col
+                                div class=dropdown
+                                    button class=btn btn-secondary dropdown-toggle type=button id=dropdownMenuButton data-toggle=dropdown aria-haspopup=true aria-expanded=falseOrder by Upload Date button
+                                    div class=dropdown-menu aria-labelledby=dropdownMenuButton x-placement=bottom-start style=position absolute; will-change transform; top 0px; left 0px; transform translate3d(0px, 37px, 0px);
+                                        button class=dropdown-item href=Upload Datebutton
+                                    div
+                                div
+                            div
+                        div
+                    div
+                    div style= margin-top 10px; margin-bottom 10px; class=
+                        div class=form-row form-inline
+                            div class=col style=display contents
+                                span class=playlist-text align-middleTips Press Ctrl + A or click All to Select All video. Hold Shift or Control to select manual video.  Double-Click to any video to preview.span
+                            div
+                        div
+                    div
+                    div class=alert alert-warning alert-dismissible fade show role=alert
+                        You are using free subscription which limit download 15 videosday, please consider a href=httpsyoutubeplaylist.ccpricing class=alert-linkupgrade your accounta
+                        to remove this limit.
+                        button type=button class=close waves-effect  data-dismiss=alert aria-label=Close
+                            span aria-hidden=true×span
+                        button
+                    div
+                    div id=exceededQuota style=display none; class=alert alert-danger alert-dismissible fade show role=alert
+                        Oh no ! You have exceeded your daily free download, please a href=httpsyoutubeplaylist.ccpricing class=alert-linkupgrade your accounta
+                        to remove this limit.  
+                        button type=button class=close waves-effect  data-dismiss=alert aria-label=Close
+                            span aria-hidden=true×span
+                        button
+                    div
+                    table id=table-playlist class=table style=margin-top 10px
+                        captionDisplay 00 videoscaption
+                        thead
+                            tr class=no-select
+                                th style=width 60% scope=col
+                                    div class=form-inline
+                                        div class=form-check
+                                            input id=selectAll type=checkbox class=form-check-inputAll
+                                        div
+                                        span style=margin-left 10pxTitle Videospan
+                                    div
+                                th
+                                th style=width 15% scope=colQualityth
+                                th style=width 15% scope=colSubtitleth
+                                th style=max-width 40px;width 10%Downloadth
+                            tr
+                        thead
+                        tbody id=playlist class=no-selecttbody
+                    table
+                div
+                div class=tab-pane fade id=downloader-tab role=tabpanel
+                    div style= margin-top 10px; 
+                        div class=dropdown style=float left;margin-bottom 10px;div
+                        div class=dropdown style=float right;margin-bottom 10px;
+                            button id=clearDownload class=btn btn-outline-primary type=buttonClear Allbutton
+                            button id=exportDownload class=btn btn-primary data-toggle=modal data-target=#export type=buttonExport Linkbutton
+                            button id=downloadZip class=btn btn-primary type=buttonDownload ZIPbutton
+                        div
+                    div
+                    table id=table-downloader class=table  style=margin-top 10px
+                        thead
+                            tr class=no-select
+                                th style=width 60% scope=col
+                                    div class=form-inline
+                                        div class=form-check
+                                            input id=downloaderSelectAll type=checkbox class=form-check-inputAll
+                                        div
+                                        span style=margin-left 10pxTitlespan
+                                    div
+                                th
+                                th style=width 30% scope=colStatusth
+                                th style=max-width 40px;width 10%Actionth
+                            tr
+                        thead
+                        tbody id=downloader class=no-select
+                            trtr
+                        tbody
+                    table
+                div
+            div
+            div class=modal fade id=setting tabindex=-1 role=dialog aria-hidden=true
+                div class=modal-dialog modal-dialog-centered role=document
+                    div class=modal-content
+                        div class=modal-header
+                            h5 class=modal-titleSetting downloadh5
+                            button type=button class=close data-dismiss=modal aria-label=Close
+                                span aria-hidden=true&times;span
+                            button
+                        div
+                        div class=modal-body
+                            div class=form-group row
+                                label class=col-sm-4 col-form-labelCut videoaudiolabel
+                                label class=col-sm-1 col-form-labelFromlabel
+                                div class=col-sm-3
+                                    input id=cutStart maxlength=8 minlength=8 style=margin-top 5px; type=text placeholder=000000 value=000000 class=form-control form-control-sm
+                                div
+                                label for=staticEmail class=col-sm-1 col-form-labelTolabel
+                                div class=col-sm-3
+                                    input id=cutEnd maxlength=8 minlength=8 style= margin-top 5px; type=text placeholder=000000 value=000000 class=form-control form-control-sm
+                                div
+                            div
+                            div class=form-group row
+                                label class=col-sm-4 col-form-labelDownload filenamelabel
+                                div class=col-sm-8
+                                    input id=downloadName required style= margin-top 5px; type=text pattern=[a-zA-Z0-9]{6,25} class=form-control form-control-sm placeholder=abc.mp4
+                                div
+                            div
+                            div class=form-group row
+                                label class=col-sm-4 col-form-labellabel
+                            div
+                        div
+                        div class=modal-footer
+                            button type=button class=btn btn-secondary data-dismiss=modalClosebutton
+                            button id=saveSetting type=button class=btn btn-primarySave changesbutton
+                        div
+                    div
+                div
+            div
+            div class=modal fade id=batch-setting tabindex=-1 role=dialog
+                div class=modal-dialog modal-dialog-centered role=document
+                    div class=modal-content
+                        div class=modal-header
+                            h5 class=modal-titleSet selected videoh5
+                            button type=button class=close data-dismiss=modal aria-label=Close
+                                span aria-hidden=true&times;span
+                            button
+                        div
+                        div class=modal-body
+                            div class=text-center
+                                div id=batch-quality class=btn-group dropright
+                                    button id=batch-quality-title type=button class=btn btn-primary dropdown-toggle  data-toggle=dropdown aria-haspopup=true aria-expanded=falseAuto Quality button
+                                    div id=batch-quality-select class=dropdown-menu 
+                                        button data-quality=auto class=dropdown-itemAuto Qualitybutton
+                                        div class=dropdown-dividerdiv
+                                        button data-quality=4320p60 data-format=mkv class=dropdown-item4320p60button
+                                        button data-quality=4320p data-format=mkv class=dropdown-item4320pbutton
+                                        button data-quality=2160p60_HDR data-format=mkv class=dropdown-item2160p60_HDRbutton
+                                        button data-quality=2160p60 data-format=mkv class=dropdown-item2160p60button
+                                        button data-quality=2160p data-format=mkv class=dropdown-item2160pbutton
+                                        button data-quality=1440p60_HDR data-format=mkv class=dropdown-item1440p60_HDRbutton
+                                        button data-quality=1440p60 data-format=mkv class=dropdown-item1440p60button
+                                        button data-quality=1440p data-format=mkv class=dropdown-item1440pbutton
+                                        button data-quality=1080p60_HDR data-format=mkv class=dropdown-item1080p60_HDRbutton
+                                        button data-quality=1080p60 data-format=mkv class=dropdown-item1080p60button
+                                        button data-quality=1080p data-format=mkv class=dropdown-item1080pbutton
+                                        button data-quality=720p60_HDR data-format=mp4 class=dropdown-item720p60_HDRbutton
+                                        button data-quality=720p60 data-format=mp4 class=dropdown-item720p60button
+                                        button data-quality=720p data-format=mp4 class=dropdown-item720pbutton
+                                        button data-quality=480p60_HDR data-format=mp4 class=dropdown-item480p60_HDRbutton
+                                        button data-quality=480p data-format=mp4 class=dropdown-item480pbutton
+                                        button data-quality=360p60_HDR data-format=mp4 class=dropdown-item360p60_HDRbutton
+                                        button data-quality=360p data-format=mp4 class=dropdown-item360pbutton
+                                        button data-quality=240p60_HDR data-format=mp4 class=dropdown-item240p60_HDRbutton
+                                        button data-quality=240p data-format=mp4 class=dropdown-item240pbutton
+                                        button data-quality=144p60_HDR data-format=mp4 class=dropdown-item144p60_HDRbutton
+                                        button data-quality=144p data-format=mp4 class=dropdown-item144pbutton
+                                        div class=dropdown-dividerdiv
+                                        button data-quality=320 data-format=mp3 class=dropdown-itemMP3-320Kbpsbutton
+                                        button data-quality=192 data-format=mp3 class=dropdown-itemMP3-192Kbpsbutton
+                                        button data-quality=128 data-format=mp3 class=dropdown-itemMP3-128Kbpsbutton
+                                    div
+                                div
+                                div id=batch-subtitle class=btn-group dropright
+                                    button id=batch-subtitle-title type=button class=btn btn-secondary dropdown-toggle waves-effect data-toggle=dropdown aria-haspopup=true aria-expanded=false3 Subtitle button
+                                    div id=batch-subtitle-select class=dropdown-menu
+                                        div id=batch-subtitle-list style= overflow-y scroll; max-height 500px;div
+                                        div class=dropdown-dividerdiv
+                                        button data-code= class=dropdown-item href=#No Subtitlebutton
+                                    div
+                                div
+                            div
+                        div
+                        div class=modal-footer
+                            button type=button class=btn btn-secondary data-dismiss=modalClosebutton
+                        div
+                    div
+                div
+            div
+            div class=modal fade id=preview tabindex=-1 role=dialog
+                div class=modal-dialog modal-dialog-centered modal-lg role=document
+                    div class=modal-content
+                        div class=modal-header
+                            h5 class=modal-titlePreviewh5
+                            button type=button class=close data-dismiss=modal aria-label=Close
+                                span aria-hidden=true&times;span
+                            button
+                        div
+                        div class=modal-body
+                            div class=embed-responsive embed-responsive-16by9
+                                iframe class=embed-responsive-item src= allowfullscreeniframe
+                            div
+                        div
+                        div class=modal-footer
+                            button type=button class=btn btn-secondary data-dismiss=modalClosebutton
+                        div
+                    div
+                div
+            div
+            div class=modal fade id=export tabindex=-1 role=dialog
+                div class=modal-dialog modal-dialog-centered modal-lg role=document
+                    div class=modal-content
+                        div class=modal-header
+                            h5 class=modal-titleExport Linkh5
+                            button type=button class=close data-dismiss=modal aria-label=Close
+                                span aria-hidden=true&times;span
+                            button
+                        div
+                        div class=modal-body
+                            textarea id=textExport class=form-control style=min-height 200px;textarea
+                        div
+                        div class=modal-footer
+                            button data-clipboard-target=#textExport id=copyClipboard type=button class=btn btn-successCopy to Clipboardbutton
+                            button id=downloadText type=button class=btn btn-primaryDownload as .txtbutton
+                            button type=button class=btn btn-secondary data-dismiss=modalClosebutton
+                        div
+                    div
+                div
+            div
+            button id=previewButton style=display none; data-toggle=modal data-target=#preview class=btn btn-default waves-effectPreview button
+            scriptscript
+            script src=httpsyoutubeplaylist.ccassetspluginsclipboard.jsclipboardjs.min.js  type=textjavascriptscript
+            script src=httpsyoutubeplaylist.ccassetspluginsintro.jsintro.min.js  type=textjavascriptscript
+            link href=httpsyoutubeplaylist.ccassetspluginsintro.jsintrojs.min.css rel=stylesheet type=textcss
+            script src=httpsyoutubeplaylist.ccassetsjshome.jst=lg44yhsv type=textjavascriptscript
+            iframe id=comment src=httpsyoutubeplaylist.cccomment style=height 100%; width 100%; border none; scrolling=noiframe
+            script
+                setInterval(function() {
+                    $('#comment').height($(#comment).contents().find(#disqus_thread).height() + 'px');
+                }, 1000);
+            script
+        div
+        footer class=footer
+            div class=container
+                span style=margin-right 20px class=text-muted© 2022 Youtube Playlistspan
+                a href=httpsyoutubeplaylist.ccdmca
+                    span class=text-mutedDMCAspan
+                a
+                a href=httpsyoutubeplaylist.ccterms
+                    span class=text-mutedTermsspan
+                a
+                a href=httpsyoutubeplaylist.ccprivacy
+                    span class=text-mutedPrivacyspan
+                a
+                a href=httpsyoutubeplaylist.ccsupport
+                    span class=text-mutedSupportspan
+                a
+            div
+        footer
+        script src=httpscdn.jsdelivr.netnpmsweetalert2@7.26.12distsweetalert2.all.min.jsscript
+        script src=httpscdn.jsdelivr.netnpmmoment@2.22.2moment.min.jsscript
+        scriptscript
+    body
+html
